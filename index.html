@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSmart AI | Masa Depan Lingkungan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loginSection" class="full-page flex-center">
+        <div class="glass-login animate-fade-in">
+            <div class="logo-circle">🌱</div>
+            <h2>EcoSmart AI</h2>
+            <p>Portal Edukasi Klasifikasi Lingkungan</p>
+            <div class="form-container">
+                <input type="text" id="userInput" placeholder="Masukkan Nama Anda">
+                <input type="password" id="passInput" placeholder="Password (Khusus Soshum)">
+                <button onclick="validateLogin()" class="btn-glow">Buka Akses</button>
+            </div>
+            <p id="alertMsg" class="alert-text"></p>
+        </div>
+    </div>
+
+    <div id="contentSection" class="hidden">
+        <nav class="top-nav">
+            <div class="menu-wrapper">
+                <button class="dots-icon" onclick="toggleDropdown()">⋮</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" onclick="scrollToTop()">Beranda</a>
+                    <a href="#" onclick="doLogout()">Keluar / Log Out</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="dynamic-overlay"></div>
+
+        <header class="hero">
+            <h1 class="gradient-text">Klasifikasi Lingkungan & Edukasi Sosial</h1>
+            <p class="subtitle">Harmonisasi Kecerdasan Buatan untuk Keberlanjutan Bumi</p>
+        </header>
+
+        <main class="container">
+            <section class="mega-card">
+                <div class="card-image bg-1"></div>
+                <div class="card-text">
+                    <h2>01. Revolusi Klasifikasi AI</h2>
+                    <p>Klasifikasi lingkungan berbasis AI bukan sekadar alat pemantau, melainkan sebuah revolusi dalam memahami cara bumi bernapas. Dengan menggunakan algoritma Deep Learning, sistem ini mampu melakukan segmentasi gambar secara real-time untuk membedakan vegetasi, tingkat kekeringan tanah, hingga kepadatan polutan di udara. Teknologi ini bertindak sebagai "mata digital" yang memberikan data objektif bagi para pengambil kebijakan.</p>
+                </div>
+            </section>
+
+            <div class="info-grid">
+                <div class="glass-card">
+                    <h3>Karakteristik Sistem</h3>
+                    <p>Ciri utama dari sistem ini adalah kemampuannya dalam melakukan **Self-Learning**. Semakin banyak data lingkungan yang diunggah, semakin akurat AI dalam mendeteksi anomali cuaca. Selain itu, sistem ini bersifat **Interoperabel**, artinya data dari AI dapat langsung diintegrasikan dengan aplikasi sosial masyarakat untuk memberikan peringatan dini.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>Metodologi Kerja</h3>
+                    <p>Langkah awal dimulai dari <i>Data Acquisition</i> (Satelit & IoT), dilanjutkan dengan <i>Feature Extraction</i> di mana AI memisahkan variabel lingkungan. Terakhir adalah tahap <i>Social Decision Support</i>, di mana hasil teknis AI diterjemahkan menjadi bahasa edukasi yang bisa dipahami oleh masyarakat luas tanpa harus menjadi ahli IT.</p>
+                </div>
+            </div>
+
+            <section class="long-text-area">
+                <div class="card-image bg-2"></div>
+                <h2>Sinergi Edukasi Sosial</h2>
+                <p>Mengapa Edukasi Sosial sangat krusial? Karena teknologi tanpa pemahaman manusia hanya akan menjadi angka mati. Edukasi sosial dalam klasifikasi lingkungan bertujuan untuk menanamkan kesadaran bahwa setiap data yang dihasilkan oleh AI memiliki dampak nyata bagi kehidupan sehari-hari. </p>
+                <p>Masyarakat diajarkan untuk merespons klasifikasi "Zona Merah Polusi" dengan tindakan preventif, bukan kepanikan. Melalui pendekatan sosiologis, kita membangun masyarakat yang literat data, di mana setiap individu merasa bertanggung jawab atas kelestarian lingkungan yang telah dipetakan oleh kecerdasan buatan tersebut. Ini adalah perjalanan panjang menuju masyarakat digital yang hijau.</p>
+            </section>
+        </main>
+
+        <footer class="contact-footer">
+            <div class="footer-line"></div>
+            <p>Ingin berdiskusi lebih lanjut tentang AI Lingkungan?</p>
+            <a href="https://wa.me/6285655703937" class="phone-link">📞 085655703937</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
